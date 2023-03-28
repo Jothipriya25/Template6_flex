@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Put your description here.">
+        <meta name="theme-color" content="#317EFB"/>
+        <title>ice clean flex</title>
+        <script type='text/javascript'>
+            //<![CDATA[ 
+            function loadCSS(e, t, n) { "use strict"; var i = window.document.createElement("link"); var o = t || window.document.getElementsByTagName("script")[0]; i.rel = "stylesheet"; i.href = e; i.media = "only x"; o.parentNode.insertBefore(i, o); setTimeout(function () { i.media = n || "all" }) }loadCSS("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+            //]]> 
+        </Script>
+    </head>
+    <style>
+
+        *{
+        box-sizing: border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            margin: 0;
+        }
+        .inside{
+            display: flex;
+            flex-wrap: wrap;
+            width:80%;
+            margin:auto;
+        }
+        img{
+            max-width:100%;
+            height: auto;
+
+        /* head1 */
+
+        }
+        .row1{
+            background-color: white;
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .head1{
+            display: flex; 
+            flex-wrap: wrap; 
+            padding:10px; 
+            width:100%;
+            
+        }
+        .msg , .call{
+            width:20%;
+        }
+
+        .icons{
+            width:60%;
+            text-align: right;
+        }
+
+        /* head2 */
+
+        .head2{
+            display: flex; 
+            flex-wrap: wrap; 
+            width:100%;
+        }
+        .logo{
+            width:20%; 
+            display: flex;
+        }
+        .search{
+            width:80%; 
+            display: flex; 
+            justify-content: end; 
+            flex-wrap: wrap; 
+            align-content: center;
+            
+        }
+
+        /* head3 */
+
+        .nav{
+            display: flex; 
+            flex-wrap: wrap; 
+            width:100%;
+        }
+        .nav > div{
+            font-size:medium;
+            color:white;
+            margin:auto;
+            
+        }
+
+        /* head4 */
+
+        .video{
+            display: flex; 
+            flex-wrap: wrap;
+        }
+        .pics{
+            display: flex; 
+            flex-wrap: wrap;
+        }
+        .card{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between; 
+            padding:10px;
+        }
+        ::placeholder { 
+            color:rgba(1, 90, 126) ;
+        }
+        .pics > div{
+            width:25%;
+            margin-top:0;
+        }
+        .card > div{
+            width:24%;
+            text-align: center;
+            /* padding:10px; */
+        }
+        .card div> h2{
+            color:#0093cf;
+        }
+        .card div> p{
+            color:rgb(75, 75, 75);
+        }
+
+        /* head5 */
+
+        .head5{
+            width:100%;
+        }
+        .equip{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
+        .equip > div{
+            width:23%;
+            border-left: 1px solid rgba(179, 176, 176, 0.45);
+            border-right: 1px solid rgba(179, 176, 176, 0.45);
+            box-shadow: 0px -25px 20px -20px rgba(201, 198, 198, 0.45),
+            0px 25px 20px -20px rgba(201, 198, 198, 0.45);
+        }
+        .label{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
+        .label >div {
+            margin:0;
+            width:23%;
+            text-align: center;
+            
+        }
+        .label div > p{
+            color: rgba(1, 90, 126);
+        }
+        .equip  img{
+            padding-top: 20px;
+        }
+
+        /* head6 */
+
+        .head6{
+            width:100%;
+        }
+        .topic1{
+            text-align:center;
+            background-color:#0093cf; 
+            color:white;
+        }
+        .topic2{
+            display: flex; 
+            flex-wrap: wrap;
+        }
+        .leftbar > div{
+            padding:13px;
+            color:rgba(1, 90, 126);
+        }
+        .leftbar{
+            width:30%;
+        }
+        .leftbar > div:hover{
+            background-color: rgba(1, 90, 126);
+            color:white;
+        }
+        .rightbar{
+            width:70%; 
+            background: url('images/bgpic.avif') no-repeat center ;
+        }
+        .rightbar > div{
+            width:50%; 
+            background:rgb(0, 0, 0, 0.8); color:white; 
+            padding:60px;
+        }
+
+        /* head7 */
+
+        .head7{
+            background:rgba(29, 158, 202, 0.8); 
+            width:100%; 
+            padding:50px;
+        }
+        .box2{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-around; 
+            padding:20px;
+        }
+        .box2 > div{
+            width:48%;
+        }
+        .box2 > div:nth-child(1){
+            text-align: right;
+        }
+
+        /* footer */
+
+        .footer{
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: space-between;
+        }
+        .footer>div {
+            width:25%;
+            color:rgba(1, 90, 126);
+            padding:10px;           
+        }
+
+
+        @media (max-width: 576px){
+            .msg , .call{
+                width: 50%;
+                height: auto;
+            }
+            .icons{
+                width:100%;
+                height: auto;
+                text-align: center;
+            }
+            .logo{
+                width:40%;
+                height: auto;
+                justify-content: center;
+            }
+            .search{
+                width:100%;
+                height: auto;
+                justify-content: center;
+            }
+            .nav > div{
+                width:50%;
+                height: auto;
+            }
+            .nav > div:nth-last-child(1){
+                width:100%;
+                height: auto;
+                
+            }
+            .pics > div:nth-child(1), .pics > div:nth-child(2){
+                width:50%;
+                height: auto;
+            }
+            .pics > div:nth-child(3), .pics > div:nth-child(4){
+                width:50%;
+                height: auto;
+            }
+            .card > div:nth-child(1), .card > div:nth-child(2){
+                width:50%;
+                height: auto;
+            }
+            .card > div:nth-child(3), .card > div:nth-child(4){
+                width:50%;
+                height: auto;
+            }
+            .head5 > div:nth-child(1){
+                width:100%;
+                height: auto;
+            }
+            .head6 .leftbar{
+                width:50%;
+                height: auto;
+            }
+            .rightbar > div{
+                width:90%;
+                height: auto;
+            }
+            .rightbar{
+                width:100%;
+                height: auto;
+            }
+            .box2 > div , .box2 > div:nth-child(1){
+                width:100%;
+                height: auto;
+                text-align: center;
+            }
+            .footer div{
+                width:100%;
+                height: auto;
+            }  
+        }
+
+        </style>
+    <body>
+        <header class="row1" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_icfPPRuT78O9OZe9nSR74x-6FIahF3DR3TKEeOrDHEw4NCO673p1efYEEdLoECgCI5o&usqp=CAU'); color:white; ">
+            <div style="background:rgba(1, 90, 126, 0.9); width:100%;">
+                <div class="inside">
+                    <div class="head1">
+                        <div class="msg"><span><i class="fa-solid fa-envelope" style="padding:5px;"></i></span>sales@iceclean.ie</div>
+                        <div class="call"><span><i class="fa-solid fa-phone-volume" style="padding:5px;"></i></span>+353 (0)1 4601277</div>
+                        <div class="icons">
+                            <i class="fa-solid fa-thumbs-up fa-bounce " style="padding:5px;"></i>
+                            <i class="fa-brands fa-linkedin fa-bounce " style="padding:5px;"></i>
+                            <i class="fa-brands fa-youtube fa-bounce " style="padding:5px;"></i>
+                            <i class="fa-brands fa-twitter fa-bounce " style="padding:5px;"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row1" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_icfPPRuT78O9OZe9nSR74x-6FIahF3DR3TKEeOrDHEw4NCO673p1efYEEdLoECgCI5o&usqp=CAU'); color:white; ">
+            <div style="background:rgba(29, 158, 202, 0.8); width:100%; padding:10px;">
+                <div class="inside">
+                    <div class="head2">
+                        <div class="logo">
+                            <img src="/images/iceclean.avif" alt="logo" width="100%" height="auto">
+                        </div>
+                        <div class="search">
+                            <form >
+                                <input type="text" placeholder="Search.." name="search"  style="  padding: 6px; margin-top: 8px;font-size: 17px;border: 1px solid white;">
+                                <button type="submit" aria-label="search" style="  padding: 6px 10px; background-color: #0093cf; color:white; font-size: 17px; margin-top: 8px;margin-right: 16px;  float:right; border: 1px solid white;"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row1" style="background-color: rgba(1, 90, 126); padding:10px;">
+            <div class="inside">
+                <div class="nav">
+                    <div>PRODUCTS</div>
+                    <div>INDUSTRY SECTORS</div>
+                    <div>SPARE PARTS</div>
+                    <div>CLEANING SUPPLIES</div>
+                    <div>FAQS</div>
+                    <div>ABOUT</div>
+                    <div>CONTACT</div>
+                </div>
+            </div>
+        </header>
+        <header class="head4">
+            <div class="video">
+                    <iframe width="100%" height="500" src="https://www.youtube.com-cvDQfo2Nmk" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="pics">
+                <div>
+                    <img src="images/pic1.avif" alt="pic1" >
+                </div>
+                <div>
+                    <img src="images/pic2.avif" alt="pic2" >
+                </div>
+                <div>
+                    <img src="images/pic3.avif" alt="pic3" >
+                </div>
+                <div>
+                    <img src="images/pic4.avif" alt="pic4" >
+                </div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2>HIRE</h2>
+                    <p>Why buy when you can Hire - ICECLEAN offers a comprehensive range of industrial cleaning equipment to cater for your needs, on short or long term hire.</p>
+                </div>
+                <div>
+                    <h2>SALES</h2>
+                    <p>Whatever the surface we've got a cleaning machine to clean it - we've got the best selection industrial cleaning machines in ireland.</p>
+                </div>
+                <div>
+                    <h2>SERVICES</h2>
+                    <p>Our experienced team of engineers and trained technicians are committed to fast, cost effective repairs. Carried out at our regional service center or on-site from our fully stocked service fleet.</p>
+                </div>
+                <div>
+                    <h2>SPARE PARTS</h2>
+                    <p>We have over 30,000 spare parts, accessories and consumables for all makes of industrial cleaning machines in stock for next day delivery.</p>
+                </div>
+            </div>
+        </header>
+        <header class="row1" style="padding:30px;">
+            <div class="inside">
+                <div class="head5">
+                    <div class="topic1">
+                        <h1>BEST SELLERS</h1>
+                    </div>
+                    <div>
+                        <div class="equip">
+                            <div>
+                                <img src="images/equip1.avif" alt="equipment1" >
+                            </div>
+                            <div>
+                                <img src="images/equip22.avif" alt="equipment2" >
+                            </div>
+                            <div>
+                                <img src="images/equip33.avif" alt="equipment3" >
+                            </div>
+                            <div>
+                                <img src="images/equip44.avif" alt="equipment4">
+                            </div>
+                        </div>
+                        <div class="label">
+                            <div>
+                                <p>GENIE E</p>
+                            </div>
+                            <div>
+                                <p>MAGNA</p>                        
+                            </div>
+                            <div>
+                                <p>ORBIS ECO 400</p>
+                            </div>
+                            <div>
+                                <p>MULTIWASH MW340</p>                        
+                            </div>
+                        </div>
+                        <div>
+                            <div class="equip">
+                                <div>
+                                    <img src="images/equip55.avif" alt="equipment5" >
+                                </div>
+                                <div>
+                                    <img src="images/equip66.avif" alt="equipment6" >
+                                </div>
+                                <div>
+                                    <img src="images/equip77.avif" alt="equipment7" >
+                                </div>
+                                <div>
+                                    <img src="images/equip88.avif" alt="equipment8" >
+                                </div>
+                            </div>
+                            <div class="label">
+                                <div>
+                                    <p>FV9 BACK VAC 220V</p>
+                                </div>
+                                <div>
+                                    <p>LSU 375 WET VAC</p>                        
+                                </div>
+                                <div>
+                                    <p>STEAM AND VAC PRO</p>
+                                </div>
+                                <div>
+                                    <p>POLARIS 800</p>                       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row1" style="padding:30px;">
+            <div class="inside">
+                <div class="head6">
+                    <div class="topic1">
+                        <h1>SELECT YOUR INDUSTRY</h1>
+                    </div>
+                    <div class="topic2">
+                        <div class="leftbar">
+                            <div>Healthcare</div>
+                            <div>Bakery & Food Manufacturing</div>
+                            <div>Construction</div>
+                            <div>Facilities Management & contract cleaners</div>
+                            <div>Education</div>
+                            <div>Retail</div>
+                            <div>Goverment & Local Authorities</div>
+                            <div>Industry & Manufacturing</div>
+                            <div>Warehouse and Distribution</div>
+                            <div>Hospitality</div>
+
+                        </div>
+                        <div class="rightbar">
+                            <div>
+                                <p>ICECLEAN offers a comprehensive range of Health Sector certified Scrubber-dryers, industrial sweepers, industrial vaccum cleaners and industrial pressure washers to help keep your primises clean and safe.</p>
+                                <br><br>
+                                <p>Regular cleaning of production areas is paramount to not only ensure your building complies with hygiene standards, but also to give you:</p>
+                                <br>
+                                <p>
+                                    <ul>
+                                        <li>Safe and clean floors</li>
+                                        <li>High-quality environment</li>
+                                        <li>Cost effective cleaning solutions</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row1" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_icfPPRuT78O9OZe9nSR74x-6FIahF3DR3TKEeOrDHEw4NCO673p1efYEEdLoECgCI5o&usqp=CAU'); color:white;">
+            <div class="head7">
+                <div style="text-align: center;">
+                    <div>
+                        <h1 style="margin:0;">IRELAND'S LEADING COMPANY</h1>
+                    </div>
+                    <div>
+                        <h1 style="margin:0;">MACHINE COMPANY</h1>
+                    </div>
+                </div>
+                <div class="box2">
+                    <div>
+                        <input type="text" placeholder="ABOUT ICECLEAN" name="search" style="  padding: 10px; font-size: 17px;border: 1px solid white;">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="ORDER MACHINE DEMO" name="search" style="  padding: 10px;font-size: 17px;border: 1px solid white;">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <header class="row1" style="padding:10px;">
+            <div class="inside">
+                <div class="footer">
+                    <div>
+                        <p>CONTACT US</p>
+                        <p><span><i class="fa-solid fa-location-dot" style="color: #0093cf; padding:5px;"></i></span>ICE - Industrial Cleaning Equipment Unit 5 Western business park Oak Close, Dublin 12</p>
+                        <p><span><i class="fa-solid fa-phone-volume" style="color: #0093cf; padding:5px;"></i></span> +353 (0)1 4601277 </p>
+                        <p><span><i class="fa-solid fa-envelope" style="color: #0093cf; padding:5px;"></i></span>sales@iceclean.ie</p>
+
+                        <p>CONNECT WITH US</p>
+                        <p>
+                            <i class="fa-brands fa-facebook fa-bounce fa-2x" style="color: #0093cf; padding:5px;"></i>
+                            <i class="fa-brands fa-linkedin fa-bounce fa-2x" style="color: #0093cf; padding:5px;"></i>
+                            <i class="fa-brands fa-youtube fa-bounce fa-2x" style="color: #0093cf; padding:5px;"></i>
+                            <i class="fa-brands fa-twitter fa-bounce fa-2x" style="color: #0093cf; padding:5px;"></i>
+                        </p>
+                    </div>
+                    <div>
+                        <p>CUSTOMER SUPPORT</p>
+                        <div>
+                            <p>Orders and Returns</p>
+                            <p>View cart</p>
+                            <p>Login</p>
+                            <p>Sitemap</p>
+                            <p>Terms & Conditions</p>
+                            <p>Privacy Policy</p>
+                            <p>Cookies</p>
+                        </div>
+                    </div>
+                    <div>
+                        <p>OUR LINKS</p>
+                        <div>
+                            <p>Products</p>
+                            <p>Industry Sectors</p>
+                            <p>Spare Parts</p>
+                            <p>Cleaning Supplies</p>
+                            <p>Faqs</p>
+                            <p>About</p>
+                            <p>Contact</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/footpic.avif" alt="footer pic">
+                        <p>Our team is here to help you save time and money, and we achieve this by understanding your cleaing equipment needs and providing you with the most cost-effective and customised cleaning solutions. </p>
+                        <img src="images/payment.avif" alt="cards pic">
+                        <div style="color:#112564;">
+                            <p style="margin:0;">Payments Powered by</p>
+                            <p style="margin:0;">WorldPay</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+    </body>
+</html>
